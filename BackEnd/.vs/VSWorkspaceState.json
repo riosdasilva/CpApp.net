@@ -1,0 +1,16 @@
+{
+  "ExpandedNodes": [
+    "",
+    "\\CpApp",
+    "\\CpApp\\CpApp",
+    "\\CpApp\\CpApp\\Controllers",
+    "\\CpApp\\CpApp\\Data",
+    "\\CpApp\\CpApp\\Data\\Repositories",
+    "\\CpApp\\CpApp\\Models",
+    "\\CpApp\\CpApp\\obj",
+    "\\CpApp\\CpApp\\Services",
+    "\\CpApp\\CpApp\\Services\\Interfaces"
+  ],
+  "SelectedNode": "\\CpApp\\CpApp\\Data\\Repositories\\DependencyInjection.cs",
+  "PreviewInSolutionExplorer": false
+}
