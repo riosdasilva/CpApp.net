@@ -17,7 +17,10 @@ namespace CpApp.Data.Repositories
         {
             services.AddScoped(typeof(IGenericRepository<>), typeof(GenericRepository<>));
             services.AddScoped<IUnitOfWork, UnitOfWork>();
-            services.AddScoped<IClientService, ClientService>();
+            services.AddScoped<IUserService, UserService>();
+            services.AddTransient<ITokenService, TokenService>();
+            services.AddScoped<ILoginService, LoginService>();
+
 
             services.AddDbContext<CpAppContext>(opt => opt
                 .UseMySql("Server=localhost; Database=CpAppNet;UserId=root; Password=admin123;"));

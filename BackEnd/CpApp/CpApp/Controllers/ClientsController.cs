@@ -1,5 +1,6 @@
 ﻿using CpApp.Models;
 using CpApp.Services.Interfaces;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 using System;
 using System.Collections.Generic;
@@ -10,11 +11,12 @@ namespace CpApp.Controllers
 {
     [Route("api/[controller]")]
     [ApiController]
+    [Authorize("Bearer")]
     public class ClientsController : ControllerBase
     {
-        private readonly IClientService _service;
+        private readonly IUserService _service;
 
-        public ClientsController(IClientService service)
+        public ClientsController(IUserService service)
         {
             _service = service;
         }

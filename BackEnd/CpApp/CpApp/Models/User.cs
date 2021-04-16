@@ -42,5 +42,7 @@ namespace CpApp.Models
         [StringLength(100)]
         [Display(Name = "Email")]
         public string Email { get; set; }
+        public string Refresh_token { get; set; }
+        public DateTime? Refresh_token_expiry_time { get; set; }
     }
 }
