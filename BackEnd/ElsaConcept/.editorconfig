@@ -1,7 +1,0 @@
-﻿[*.cs]
-
-# CA1725: Parameter names should match base declaration
-dotnet_diagnostic.CA1725.severity = none
-
-# CA1707: Identifiers should not contain underscores
-dotnet_diagnostic.CA1707.severity = silent
